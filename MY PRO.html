@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    .footer {
+      background-color:white;
+      color:black;
+      }
+    #HHH{
+      color:white
+    }
+    .img-responsive:hover{
+      transform:sacle(1.115);
+      box-shadow:0px 0px 30px;
+      transition:transform sacale(1.115) ease-in-out;
+      transition-delay:0.3s;
+      color:white
+    }
+    #r4{
+      background-color:white;
+      width:100%;
+      height:300px
+    }
+    #r4c1{
+      width:35%;
+      background-color:white;
+      display:flex;
+      padding-top:30px;
+      padding-left:30px;
+      float:left;
+      
+    }
+    #r4c2{
+      color:black;
+      width:100%;
+      padding-top:50px;
+    }
+    #r5{
+      margin-top:20px;
+      background-color:white;
+      width:100%;
+    }
+    #r5c1{
+      width:35%;
+      background-color:white;
+      float:left;
+      display:flex;
+      padding-top:30px;
+      padding-left:30px;
+      
+    }
+    #r5c2{
+      color:black;
+      width:100%;
+      padding-top:50px;
+    }
+
+    .parallax {
+  /* The image used */
+  background-image: url("a2.jpg");
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home{
+  /* background-image:url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk5MC0xMjdhXzEuanBn.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  */
+  height:1000px;
+  padding-top:30px;
+  color:black;
+}
+#Qualifications
+	            {
+	                background-attachment:fixed;
+	                background-image:url('https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvMzk2LWZlbGl4LW1nLTIwNzAtamlyLW5hbV8zLnBuZw.png');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                padding-bottom:40px;
+	                color:#000000;
+                  border-top:10px solid white;
+	            }
+	            #QualificationsRow
+	            {
+	                 margin-top:100px;
+	                 margin-bottom:100px;
+	            }
+	            #QualificationsRow div.col-lg-offset-1
+	            {
+	                padding:10px;
+	                background-color:rgba(255,255,255,0.8);
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px blue;
+	                
+	            }
+	            #Qualifications table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Qualifications table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Qualifications table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+
+              #Noncollegiate
+	            {
+	                background-attachment:fixed;
+	                background-image:url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcC0yNTktYmVyNDEzNC1jaGltLmpwZw.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                padding-bottom:40px;
+	                color:#000000;
+                  border-top:10px solid white;
+	            }
+	            #NoncollegiateRow
+	            {
+	                 margin-top:100px;
+	                 margin-bottom:100px;
+	            }
+	            #NoncollegiateRow div.col-lg-offset-1
+	            {
+	                padding:10px;
+	                background-color:#DCDCDC;
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px blue;
+	                opacity:0.8;
+	            }
+	            #Noncollegiate table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Noncollegiate table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Noncollegiate table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+              .SSS{
+                position:fixed;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                z-index:-1;
+                width:100%;
+                height:100%;
+                overflow:hidden;
+                background-image:cover;
+              }
+              .SSS video{
+                position:fixed;
+                width:auto;
+                height:auto;
+                min-width:100%;
+                min-height:100%;
+              }
+
+              #FreelancingRoleRow
+	            {
+	                background:rgba(0,0,0,0.8);
+	                padding-top:10%;
+	                padding-bottom:10%;
+	            }
+	            #FreelancingRoleRow div.col-lg-3
+	            {
+	                text-align:center;
+	            }
+	            #FreelancingRoleRow div.col-lg-3 i.fa
+	            {
+	                color:Orange;
+	            }
+	            #FreelancingRole h1
+	            {
+	                font-family:Monotype Corsiva;
+	            }
+
+            </style>
+</head>
+<body>
+
+<div id="HHH">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#web">intro</a></li>
+        <li><a href="#">qualification</a></li>
+        <li><a href="#">Noncollegiate</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#web">skills</a></li>
+        <li><a href="#web">passion</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+       <div class="SSS">
+        <video src="formation_of_clouds (1080p).mp4" autoplay loop muted></video>
+       </div>
+       <div id="home">
+        
+        <div id="start" style="background-color:rgba(255, 255, 255, 0.658); height:800px; width:500px;
+        border-radius:50px; margin-left:40px;">
+        <div id="raw1">
+        <img src="aaa1.jpg" height="400" style="border-radius:50px; margin-top:50px; margin-left:100px;">
+        <center><h2>Avesh Saiyad</h2></center>
+        <center><h5>Btech Student...</h5></center>
+        </div>
+        <b><hr/></b>
+        <div id=raw2 style= "width:100%;">
+          <center><i class="fa fa-2x fa-phone" style="height:2px;"></i>   91-9737275376<br>
+            <i class="fa fa-2x fa-envelope"></i> avesh7168@gmail.com </center>
+        </div>
+        <hr/>
+        <div>
+          <center><i class="fa fa-2x fa-map-marker"></i>  Danilimda, Ahmedabad-380028 </center>
+        </div>
+        <hr/>
+        <div>
+          <center><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;<a href="#"><i class="fa fa-2x fa-twitter-square"></i></a> &nbsp;<a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a> &nbsp;<a href="#"><i class="fa fa-2x fa-instagram"></i></a></center>
+        </div>
+        </div>
+        </div>
+
+  <br><hr>
+ 
+<div style="background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLTItamlyLTA3MjItY2hpbS0wMWEuanBn.jpg); 
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
+<div class="container-fluid bg-3 text-center" >    
+  <i><h1  style="background-size:cover;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsa6S-A_hHyt9BJdnDdnLfbW5rg_oXf_2b5g&usqp=CAU); color:black;border-radius:25px">#skills...</h1></i><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p>"HTML"</p>
+      <a href="https://www.w3schools.com/html/default.asp" class="img-responsive">
+      <img src="https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/07/insert-image-html.jpg" style="width:100%; height:200px" alt="Image"></a>
+    </div>
+    <div class="col-sm-3"> 
+      <p>"CSS"</p>
+      <a href="https://www.w3schools.com/html/default.asp"class="img-responsive">
+      <img src="https://cdn.mos.cms.futurecdn.net/Vp9WvV7YKdH4k8sKRePcE8-1024-80.jpg.webp"  style="width:100%; height:200px" alt="Image">
+    </a>
+    </div>
+    <div class="col-sm-3"> 
+      <p>"BASIC C"</p>
+      <a href="https://www.w3schools.com/html/default.asp" class="img-responsive"><img src="https://qph.cf2.quoracdn.net/main-qimg-b929679daca6528e2768bc59720c35d9"  style="width:100%; height:200px" alt="Image">
+     </a>
+    </div>
+    <div class="col-sm-3">
+      <p>"C++"</p>
+       <a href="https://www.w3schools.com/html/default.asp" class="img-responsive"><img src="https://bitcoinox.com/wp-content/uploads/2019/11/C__-Image-1024x768.png"  style="width:100%; height:200px" alt="Image">
+       </a>
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <p>"JAVA SCRIPT"</p>
+      <a href="https://www.w3schools.com/html/default.asp" class="img-responsive"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsa6S-A_hHyt9BJdnDdnLfbW5rg_oXf_2b5g&usqp=CAU"  style="width:100%; height:200px" alt="Image">
+      </a> 
+    </div>
+    <div class="col-sm-3"> 
+      <p>"JAVA"</p>
+      <a href="https://www.w3schools.com/html/default.asp" class="img-responsive"><img src="https://images.idgesg.net/images/article/2019/05/java_binary_code_gears_programming_coding_development_by_bluebay2014_gettyimages-1040871468_2400x1600-100795798-large.jpg?auto=webp&quality=85,70"  style="width:100%; height:200px" alt="Image">
+     </a>
+    </div>
+    <div class="col-sm-3"> 
+      <p>"BOOTSTRAP"</p>
+      <a href="https://www.w3schools.com/html/default.asp" class="img-responsive"><img src="https://miro.medium.com/v2/resize:fit:1400/1*U7m8szFsPNjbty8hyWGGCg.png" style="width:100%; height:200px; " alt="Image">
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <p>"PHP"</p>
+      <a href="https://www.w3schools.com/html/default.asp" class="img-responsive"><img src="https://www.wpkube.com/wp-content/uploads/2021/11/what-is-php-beginners-guide-1280x720.png"  style="width:100%; height:200px;" alt="Image">
+      </a>
+    </div>
+  </div><br><br><br>
+</div>
+</div>  
+
+
+
+<div id="Qualifications" class="container-fluid" >
+  <center ><i><h1><i class="fa fa-object-group"></i>Education Qualification</h1></i></center><hr style="background-color: #000000;">
+  <div class="row" id="QualificationsRow">
+       <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="3s">
+            <h2 class="text-center"><i class="fa fa-object-group"></i> Education Qualification</h2><hr />
+            <table class="table table-responsive">   
+                <tr>
+                   <td>Year<br />2021-2023..</td>
+                   <td>Current Running<br>Btech from Silver Oak UNivercity <br /> 3rd year Running
+                </tr>  
+                <tr>
+                    <td>Year<br />2019-2021</td>
+                    <td>Science Field in Group-A<br /> from Shama Higher Secondary School<br /> With Maths MOdel <br /> 
+                </tr>
+                <tr>
+                    <td>Year<br />2017 - 2019</td>
+                    <td>10th std With Gujarat BOard <br />Chirag high school,<br /> G.S.E.B. board.<br />
+                </tr>
+                <tr>
+                    <td>Year<br />2015-2017</td>
+                    <td>High School <br /> Al-Faruk High SChool, <br /> G.S.E.B. board.
+                </tr>
+            </table>
+       </div>
+  </div>
+</div>
+
+<div id="Noncollegiate" class="container-fluid" >
+  <div class="row" id="NoncollegiateRow">
+       <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="3s">
+            <center><br /><h2><i class="fa fa-object-group"></i> Non Collegiate Activities</h2><hr /></center>
+            <table>
+                <tr>
+                    <td>Year 2016</td>
+                    <td>won trophy as a team in cricket..</td>
+                </tr>
+                <tr>
+                    <td>Year 2019</td>
+                    <td>sports..<br /> won gold maddele in a kabaddi..</td>
+                </tr>
+            </table>
+       </div>
+  </div>
+</div> 
+
+
+ <div id="FreelancingRole" class="container-fluid wow bounceInUp" data-wow-duration="3s">
+  <div class="row" id="FreelancingRoleRow">
+       <center><br /><h1><i class="fa fa-object-group"></i> My Freelancing Role</h1><hr /></center>
+       <div class="col-lg-3 col-md-3 col-sm-4">
+            <i class="fa fa-5x fa-users"></i><br />Clients<br />50
+       </div>
+       <div class="col-lg-3 col-md-3 col-sm-4">
+            <i class="fa fa-5x fa-thumbs-up"></i><br />Projects<br />120
+       </div>
+       <div class="col-lg-3 col-md-3 col-sm-4">
+            <i class="fa fa-5x fa-smile-o"></i><br />Experineces<br />145
+       </div>
+       <div class="col-lg-3 col-md-3 col-sm-4">
+            <i class="fa fa-5x fa-list"></i><br />Line of Code<br />50260
+       </div>
+  </div>
+</div>
+
+  </body>
+</html>
